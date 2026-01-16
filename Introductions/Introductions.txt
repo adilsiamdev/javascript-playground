@@ -1,0 +1,14 @@
+This tutorial covers everything from basic JavaScript up to the latest 2026 version.
+
+>Learn JavaScript
+The Programming Language of the Web
+JavaScript is easy to learn.
+
+>What Can JavaScript Do?
+JavaScript is the programming language of the web.
+
+It can calculate, manipulate and validate data.
+
+It can update and change both HTML and CSS.
+
+It can run into
