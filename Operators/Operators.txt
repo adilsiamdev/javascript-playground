@@ -1,0 +1,11 @@
+Operators mane + - * /
+
+ekhane + er kaj holo jog kora
+- er kaj holo - kora
+* er kaj holo  gun kora/ er kaj holo  vag kora
+
+example :
+let op = 23;
+let cp = 10;
+function opcp = op + cp;
+console.log(opcp);
