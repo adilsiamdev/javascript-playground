@@ -31,5 +31,29 @@ console.log('Array after splice (add):', items);
 //Using delete() leaves undefined holes in the array.
 delete items[1];
 //The concat() method creates a new array by merging (concatenating) existing arrays:
-
-
+let addItems = ['charger', 'USB cable'];
+let allItems = items.concat(addItems);
+console.log('Concatenated array:',allItems);
+//The copyWithin() method copies array lements to another position in an array:
+let numbers = [1, 2, 3, 4, 5];
+numbers.copyWithin(0, 3);
+console.log('Array after copyWithin:', numbers);
+//The flat() method creates a new array with sub-array elements concatenated to a specified depth.
+let nestedArray = [1, 2, [3, 4], [5, 6]];
+let flatArray = nestedArray.flat();
+console.log('Flattened array:', flatArray);
+//The splice() method can be used to add new items to an array:
+items.splice(3, 0, 'Neckband', 'Ipad');
+console.log('Array after splice (add):', items);
+//The splice() method can also be used to remove items from an array:
+items.splice(4, 2);
+console.log('Array after splice (remove):', items);
+//toSpliced() method creates a new array by splicing out a portion of an existing array and replacing it with new elements, without modifying the original array.:
+let splicedArray = items.toSpliced(2, 3, 'Smartwatch', 'Tablet');The Array.some()
+console.log('Original array:', items);
+//pop() method removes the last element from an array and returns that element.:
+let removedItem = items.pop();
+console.log('Removed item:', removedItem);
+//The Array.some() method checks if any of the elements in an array pass a test (provided as a function).
+let hasPhone = items.some(item => item === 'phone');
+console.log('Does the array contain "phone"?', hasPhone);
