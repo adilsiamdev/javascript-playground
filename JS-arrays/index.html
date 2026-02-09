@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The entries() Method</h2>
+
+<p>The entries() method returns an iterator with the key/value pairs from an array:</p>
+<p id="demo"></p>
+
+<script>
+// Create an Array
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// Create an Iterator
+const list = fruits.entries();
+
+// List the Entries
+let text = "";
+for (let x of list) {
+  text += x + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+<p>The entries() method is not supported in Internet Explorer.</p>
+
+</body>
+</html>
