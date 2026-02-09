@@ -1,0 +1,2 @@
+1. (let const var ) er moddhe parthokko   
+2. facebook homepage with html and css
