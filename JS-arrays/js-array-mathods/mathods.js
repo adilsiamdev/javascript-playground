@@ -34,10 +34,10 @@ delete items[1];
 let addItems = ['charger', 'USB cable'];
 let allItems = items.concat(addItems);
 console.log('Concatenated array:',allItems);
-//The copyWithin() method copies array lements to another position in an array:
-let numbers = [1, 2, 3, 4, 5];
-numbers.copyWithin(0, 3);
-console.log('Array after copyWithin:', numbers);
+// //The copyWithin() method copies array lements to another position in an array:
+// let numbersC = [1, 2, 3, 4, 5];
+// numbers.copyWithin(0, 3);
+// console.log('Array after copyWithin:', numbersC);
 //The flat() method creates a new array with sub-array elements concatenated to a specified depth.
 let nestedArray = [1, 2, [3, 4], [5, 6]];
 let flatArray = nestedArray.flat();
@@ -49,7 +49,9 @@ console.log('Array after splice (add):', items);
 items.splice(4, 2);
 console.log('Array after splice (remove):', items);
 //toSpliced() method creates a new array by splicing out a portion of an existing array and replacing it with new elements, without modifying the original array.:
-let splicedArray = items.toSpliced(2, 3, 'Smartwatch', 'Tablet');The Array.some()
+// let splicedArray = items.toSpliced(2, 3, 'Smartwatch', 'Tablet');
+// console.log('New array after toSpliced:', splicedArray);
+//to spliced e (2,3) means starting from index 2, remove 3 elements and add 'Smartwatch' and 'Tablet' in their place.
 console.log('Original array:', items);
 //pop() method removes the last element from an array and returns that element.:
 let removedItem = items.pop();
@@ -57,3 +59,51 @@ console.log('Removed item:', removedItem);
 //The Array.some() method checks if any of the elements in an array pass a test (provided as a function).
 let hasPhone = items.some(item => item === 'phone');
 console.log('Does the array contain "phone"?', hasPhone);
+//The Array every() method checks if all elements in an array pass a test (provided as a function)
+let allHaveE = items.every(item => item.includes('e'));
+console.log('Do all items contain "e"?', allHaveE);
+
+
+
+
+
+
+//every 
+function everyFunction(fruits) {
+    fruits = ['Banana', 'Orange', 'Apple', 'Mango'];
+    fruits = fruits.every(fruit => fruit.includes('Banana'));
+    console.log('Fruits:', fruits)
+}
+everyFunction();
+
+
+
+
+
+
+function ageFunction(a) {
+    const ages = [18, 22, 25, 30]; 
+    const allAdults = ages.every(age => age >= a);
+    console.log('All ages are 18 or older:', allAdults);
+}
+ageFunction(18);
+
+const numbers = [2, 4, 6, 8];
+const allEven = numbers.every(num => num % 2 === 0);
+console.log(allEven); // true   
+
+
+//forEach method
+//The forEach() method executes a provided function once for each array element.
+const numberForEach = [1, 2, 3, 4, 5];
+numberForEach.forEach(num => console.log(num * 2));
+//The forEach() method does not return a new array, it simply executes the provided function for each element in the array. If you want to create a new array based on the results of the forEach() method, you can use the map() method instead.
+function forEachFunction() {
+    const numbers = [1, 2, 3, 4, 5];
+    const doubledNumbers = [];
+    numbers.forEach(num => {
+        doubledNumbers.push(num * 2);
+    });
+    console.log('Doubled numbers:', doubledNumbers);
+}
+forEachFunction();
