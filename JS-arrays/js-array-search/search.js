@@ -9,3 +9,8 @@ console.log("Mango is found in position" + "",position);
 let position1 = fruits.lastIndexOf("Apple") +1 //+1 deoar karon position index er moto 0 theke suru hoy na
 console.log("Apple is found in position" + "", position)
 
+//ECMAScript 2016 introduced Array.includes() to arrays. This allows us to check if an element is present in an array (including NaN, unlike indexOf).
+const products = ["pen", "paper", "laptop", "mouse"];
+console.log(products.includes("mouse")); //list er moddhe mouse chilo jonno true asche
+console.log(products.includes("keyboard")); //list er moddhe keyboard nai jonno false asche.
+
