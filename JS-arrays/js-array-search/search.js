@@ -14,3 +14,10 @@ const products = ["pen", "paper", "laptop", "mouse"];
 console.log(products.includes("mouse")); //list er moddhe mouse chilo jonno true asche
 console.log(products.includes("keyboard")); //list er moddhe keyboard nai jonno false asche.
 
+//The find() method returns the value of the first array element that passes a test function.
+const numbers = [4, 9, 16, 25, 29];
+let first = numbers.find(myFunction);
+console.log("First number over 18 is", first);
+function myFunction(value,index,array){
+    return value > 18 ;
+}
