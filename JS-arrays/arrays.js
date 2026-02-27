@@ -10,3 +10,7 @@ const person1 = {
 }
 console.log(person1);
 console.log(person1.Name);
+
+const perfumeList =["Lattafa Asada", "blew de chanel", "CDNI"]
+console.log(perfumeList);
+

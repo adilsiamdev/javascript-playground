@@ -107,3 +107,8 @@ function forEachFunction() {
     console.log('Doubled numbers:', doubledNumbers);
 }
 forEachFunction();
+
+//map
+
+
+
