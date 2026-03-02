@@ -9,3 +9,8 @@ fruits1.sort();
 fruits1.reverse();
 console.log(fruits1);
 
+//The sort() method can be used to sort an array in ascending order:
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a - b});
+console.log(points);
+
