@@ -35,3 +35,9 @@ function myFunction1(value,index,array){
 const temp = [27, 28, 30, 40, 42, 35, 30];
 let high = temp.findLast(x => x > 40);
 console.log("The last temperature over 40 is", high);
+
+//ES2023 added the findLastIndex() method that will start from the end of an array and return the index of the first element that satisfies a condition.
+const temp1 = [27, 28, 30, 40, 42, 35, 30];
+let high1 = temp1.findLastIndex(x => x > 40);
+console.log("The last temperature over 40 is found in position", high1 + 1);
+
