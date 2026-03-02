@@ -21,3 +21,12 @@ console.log("First number over 18 is", first);
 function myFunction(value,index,array){
     return value > 18 ;
 }
+
+//The findIndex() method returns the index of the first array element that passes a test function.
+
+const numbers1 = [4, 9, 16, 25, 29];
+let first1 = numbers1.findIndex(myFunction1);
+console.log("First number over 18 is found in position", first1 + 1);
+function myFunction1(value,index,array){
+    return value > 18 ;
+}
