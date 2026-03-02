@@ -30,3 +30,8 @@ console.log("First number over 18 is found in position", first1 + 1);
 function myFunction1(value,index,array){
     return value > 18 ;
 }
+
+//ES2023 added the findLast() method that will start from the end of an array and return the value of the first element that satisfies a condition.
+const temp = [27, 28, 30, 40, 42, 35, 30];
+let high = temp.findLast(x => x > 40);
+console.log("The last temperature over 40 is", high);
