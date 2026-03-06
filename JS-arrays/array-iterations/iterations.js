@@ -12,15 +12,19 @@ function myFunction1(value) {
 
 //The map() method does not change the original array.
 const numbers1 = [45, 4, 9, 16, 25];
-const numbers2 = numbers1.map(myFunction);
+const numbers2 = numbers1.map(myFunction2);
 
-function myFunction(value) {
+function myFunction2(value) {
   return value * 2;
 }
-console.log(numbers2);const numbers3 = [45, 4, 9, 16, 25];
-const numbers4 = numbers3.map(myFunction);
+console.log(numbers2);
 
-function myFunction(value) {
-  return value * 3;
+const numbers3 = [45, 4, 9, 16, 25];
+const numbers4 = numbers3.map(myFunction4);
+
+function myFunction4(value) {
+  return value * 7;
 }
 console.log(numbers4);
+
+
