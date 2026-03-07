@@ -33,3 +33,12 @@ const myArr = [1, 2, 3, 4, 5,6];
 const newArr = myArr.flatMap(x => [x,x * 10]);
 console.log(newArr);
 
+//The filter() method creates a new array with array elements that pass a test.
+//This example creates a new array from elements with a value larger than 18:
+const numbers5 = [45, 4, 9, 16, 25];
+const numbers6 = numbers5.filter(myFunction3);
+
+function myFunction3(value) {
+  return value > 18;
+}
+console.log(numbers6);
