@@ -56,11 +56,19 @@ console.log(sum);
 //The reduceRight() method runs a function on each array element to produce a single value.
 //The reduceRight() works from right-to-left in the array. See also reduce().
 const numbers8 = [45, 4, 9, 16, 25];
-let sum2 = numbers8.reduceRight(myFunction7);
-function myFunction7(total,value){
+let sum2 = numbers8.reduceRight(myFunction6);
+function myFunction6(total,value){
   return total+value;
 }
 console.log(sum2)
 
+
 //The every() method checks if all array values pass a test.
 //This example checks if all array values are larger than 18.
+const numbers9 = [45, 4, 9, 16, 25];
+const allOver18 = numbers9.every(myFunction7);
+
+function myFunction7(value) {
+  return value > 18;
+}
+console.log("All over 18 is " + allOver18);
