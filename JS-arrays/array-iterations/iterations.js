@@ -91,3 +91,13 @@ console.log(myArr2);
 
 const myArr3 = Array.from([1, 2, 3], x => x + x);
 console.log(myArr3);
+
+//The Array.keys() method returns an Array Iterator object with the keys of an array.
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+const keys = fruits.keys();
+
+
+for (let x of keys) {
+  console.log(x);
+}
