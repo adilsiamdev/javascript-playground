@@ -82,3 +82,12 @@ function myFunction8(value) {
   return value > 18;
 }
 console.log("Some over 18 is " + someOver18);
+
+//The Array.from() method returns an Array object from:
+//1.Any iterable object
+//2.Any object with a length property
+const myArr2 = Array.from("ABCDEFG");
+console.log(myArr2);
+
+const myArr3 = Array.from([1, 2, 3], x => x + x);
+console.log(myArr3);
