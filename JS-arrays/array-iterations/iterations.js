@@ -72,3 +72,13 @@ function myFunction7(value) {
   return value > 18;
 }
 console.log("All over 18 is " + allOver18);
+
+//The some() method checks if any of the array values pass a test.
+//This example checks if any array values are larger than 18.
+const numbers10 = [45, 4, 9, 16, 25];
+const someOver18 = numbers10.some(myFunction8);
+
+function myFunction8(value) {
+  return value > 18;
+}
+console.log("Some over 18 is " + someOver18);
