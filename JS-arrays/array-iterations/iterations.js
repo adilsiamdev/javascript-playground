@@ -101,3 +101,21 @@ const keys = fruits.keys();
 for (let x of keys) {
   console.log(x);
 }
+
+//Create an Array Iterator, and then iterate over the key/value pairs:
+const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+
+const entries = fruits2.entries();
+
+for (let x of entries) {
+  console.log(x);
+}
+
+//The entries() method returns an Array Iterator object with key/value pairs:
+const fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+
+const values = fruits3.values();
+
+for (let x of values) {
+  console.log(x);
+}
