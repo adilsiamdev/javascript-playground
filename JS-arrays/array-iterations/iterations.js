@@ -119,3 +119,10 @@ const values = fruits3.values();
 for (let x of values) {
   console.log(x);
 }
+
+//The ... operator expands an array into individual elements.
+//This can be used join arrays:
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+const joinedArray = [...array1, ...array2];
+console.log(joinedArray);
