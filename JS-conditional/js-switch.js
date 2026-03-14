@@ -77,3 +77,22 @@ switch (date2) {
 console.log(day2); // Output: (current day of the week)
 
 //.........................
+//The default keyword specifies a block of code to run if there is no case match.
+//The default keyword is optional.
+//The default can act as a fallback:
+//Example:
+//The getDay() method returns the weekday as a number between 0 and 6.
+//If today is neither Saturday (6) nor Sunday (0), write a default message:
+
+let text;
+switch (new Date().getDay()) {
+  case 6:
+    text = "Today is Saturday";
+    break;
+  case 0:
+    text = "Today is Sunday";
+    break;
+  default:
+    text = "Looking forward to the Weekend";
+}
+console.log(text); // Output: (current day of the week or "Looking forward to the Weekend")
