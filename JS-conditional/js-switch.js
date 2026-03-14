@@ -96,3 +96,21 @@ switch (new Date().getDay()) {
     text = "Looking forward to the Weekend";
 }
 console.log(text); // Output: (current day of the week or "Looking forward to the Weekend")
+
+//JavaScript switch Controls
+//Common Code Blocks
+// this example, case 4 and 5 share the same code block, and 0 and 6 share another code block:
+let text2;
+switch (new Date().getDay()) {
+  case 4:
+  case 5:
+    text2 = "Soon it is Weekend";
+    break;
+  case 0:
+  case 6:
+    text2 = "It is Weekend";
+    break;
+  default:
+    text2 = "Looking forward to the Weekend";
+}
+console.log(text2); // Output: (current day of the week or "Looking forward to the Weekend")
