@@ -126,3 +126,17 @@ const array1 = [1, 2, 3];
 const array2 = [4, 5, 6];
 const joinedArray = [...array1, ...array2];
 console.log(joinedArray);
+
+//The rest operator (...) allows us to destruct an array and collect the leftovers:
+let a, rest;
+const arr1 = [1,2,3,4,5,6,7,8];
+[a, ...rest] = arr1;
+console.log("First element:", a);
+console.log("Rest of the elements:", rest);
+
+let b, rest2;
+const arr12 = [1,2,3,4,5,6,7,8];
+[b, ...rest2] = arr12;
+console.log("First element:", b);
+console.log("Rest of the elements:", rest2);
+
