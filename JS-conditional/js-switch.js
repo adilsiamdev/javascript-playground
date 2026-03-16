@@ -114,3 +114,5 @@ switch (new Date().getDay()) {
     text2 = "Looking forward to the Weekend";
 }
 console.log(text2); // Output: (current day of the week or "Looking forward to the Weekend")
+
+
