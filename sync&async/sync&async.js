@@ -12,6 +12,8 @@ processOrder();
 console.log("take order for customer 2");
 processOrder();
 
+console.log("------------------------------");
+
 //Async.js
 const processOrderAsync = (customer) => {
   console.log("Processing Order for customer 1");
